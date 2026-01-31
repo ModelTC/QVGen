@@ -1,0 +1,23 @@
+export CUDA_VISIBLE_DEVICES=0
+python inference/wan.py \
+    --prompt "your prompt here" \
+    --model_path models/Wan2.1-T2V-1.3B-Diffusers \
+    --width 832 \
+    --height 480 \
+    --num_frames 81 \
+    --fps 16 \
+    --dtype bfloat16 \
+    --quant \
+    --seed 0 \
+    --quant_model_path path/to/your/quant_model \
+    --w_bit 4 \
+    --w_granularity per_channel \
+    --w_group_size -1 \
+    --act_quantizer learnable_clipped_dynamic \
+    --act_bit 4 \
+    --use_aq \
+    --w_quantizer lsq+ \
+    --output_path path/to/your/output_path \
+    --use_aq \
+    --clip_group_num 50 \
+    --fix

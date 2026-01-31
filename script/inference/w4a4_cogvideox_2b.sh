@@ -1,0 +1,23 @@
+export CUDA_VISIBLE_DEVICES=0
+python inference/cogvideo.py \
+    --prompt "your prompt here" \
+    --model_path models/CogVideoX-2b \
+    --width 720 \
+    --height 480 \
+    --num_frames 49 \
+    --fps 8 \
+    --dtype bfloat16 \
+    --quant \
+    --seed 0 \
+    --quant_model_path path/to/your/quant_model \
+    --w_bit 4 \
+    --w_granularity per_channel \
+    --w_group_size -1 \
+    --act_quantizer learnable_clipped_dynamic \
+    --act_bit 4 \
+    --use_aq \
+    --w_quantizer lsq+ \
+    --output_path path/to/your/output_path \
+   --use_aq \
+   --clip_group_num 50 \
+   --fix
