@@ -8,7 +8,7 @@
 
 **[ [Conference Paper](https://arxiv.org/abs/2505.11497) | [Models](https://huggingface.co/collections/Harahan/qvgen) | [Dataset](https://huggingface.co/datasets/nkp37/OpenVid-1M) ]**
 
-[Yushi Huang](https://github.io/Harahan), [Ruihao Gong📧](https://xhplus.github.io/), [Jing Liu](https://jing-liu.com/), [Yifu Ding](https://yifu-ding.github.io/), [Chengtao Lv](https://scholar.google.com/citations?user=r8vseSUAAAAJ&hl=en), [Haotong Qin](https://htqin.github.io/), [Jun Zhang📧](https://eejzhang.people.ust.hk/)
+[Yushi Huang](https://Harahan.github.io), [Ruihao Gong📧](https://xhplus.github.io/), [Jing Liu](https://jing-liu.com/), [Yifu Ding](https://yifu-ding.github.io/), [Chengtao Lv](https://scholar.google.com/citations?user=r8vseSUAAAAJ&hl=en), [Haotong Qin](https://htqin.github.io/), [Jun Zhang📧](https://eejzhang.people.ust.hk/)
 
 (📧 denotes corresponding author.)
 
