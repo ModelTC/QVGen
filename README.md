@@ -26,9 +26,80 @@ This is the official implementation of our paper [QVGen](https://arxiv.org/abs/2
 ## 🎬 Visual Examples
 
 <div align="center">
-  <img src="./assets/cogvideox-2b-vis.png" width="80%"/>
+    <table>
+      <tr>
+        <td align="center" width="25%">
+          <video src="https://github.com/user-attachments/assets/ebc73b77-1c5a-4ef4-a364-5f7286309c1e" controls loop autoplay muted style="max-width: 100%; height: auto;">
+              Your browser does not support the video tag.
+          </video>
+          <strong>BF16</strong>
+        </td>
+        <td align="center" width="25%">
+          <video src="https://github.com/user-attachments/assets/c45af223-609c-4056-8198-ada018f5a43e" controls loop autoplay muted style="max-width: 100%; height: auto;">
+            Your browser does not support the video tag.
+          </video>
+          <strong>W4A4 QVGen (Ours)</strong>
+        </td>
+        <td align="center" width="25%">
+          <video src="https://github.com/user-attachments/assets/5f54383b-2e06-4833-ad25-829bc4445006" controls loop autoplay muted style="max-width: 100%; height: auto;">
+            Your browser does not support the video tag.
+          </video>
+          <strong>W4A4 EfficientDM</strong>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" width="25%">
+          <video src="https://github.com/user-attachments/assets/9f1d6a24-50e1-4f97-ad2d-5ed0a32ad22b" controls loop autoplay muted style="max-width: 100%; height: auto;">
+              Your browser does not support the video tag.
+          </video>
+          <strong>W4A4 Q-DM</strong>
+        </td>
+        <td align="center" width="25%">
+          <video src="https://github.com/user-attachments/assets/5abc840a-fe64-4f90-9be7-37499d1a205e" controls loop autoplay muted style="max-width: 100%; height: auto;">
+            Your browser does not support the video tag.
+          </video>
+          <strong>W4A4 LSQ</strong>
+        </td>
+        <td align="center" width="25%">
+          <video src="https://github.com/user-attachments/assets/2aa824f4-76fb-456e-a056-ec138adeb14c" controls loop autoplay muted style="max-width: 100%; height: auto;">
+            Your browser does not support the video tag.
+          </video>
+          <strong>W4A6 SVDQuant</strong>
+        </td>
+      </tr>
+    </table>
+  
   <br/>
-  <img src="./assets/wan-14b-vis.png" width="80%"/>
+
+  <table>
+    <tr>
+      <td align="center" width="25%">
+        <video src="https://github.com/user-attachments/assets/e8536dfb-ad92-4921-827b-a9b39d7c6985" controls loop autoplay muted style="max-width: 100%; height: auto;">
+            Your browser does not support the video tag.
+        </video>
+        <strong>BF16</strong>
+      </td>
+      <td align="center" width="25%">
+        <video src="https://github.com/user-attachments/assets/0f128045-6cc4-4c1a-b153-f0a48e85f15a" controls loop autoplay muted style="max-width: 100%; height: auto;">
+          Your browser does not support the video tag.
+        </video>
+        <strong>W4A4 QVGen (Ours)</strong>
+      </td>
+      <td align="center" width="25%">
+        <video src="https://github.com/user-attachments/assets/03abc96c-35d0-4855-835a-2c266c87ee47" controls loop autoplay muted style="max-width: 100%; height: auto;">
+            Your browser does not support the video tag.
+        </video>
+        <strong>BF16</strong>
+      </td>
+      <td align="center" width="25%">
+        <video src="https://github.com/user-attachments/assets/a352ec84-407c-433e-b41e-cbdc0417ffff" controls loop autoplay muted style="max-width: 100%; height: auto;">
+          Your browser does not support the video tag.
+        </video>
+        <strong>W4A4 QVGen (Ours)</strong>
+      </td>
+    </tr>
+  </table>
+
   <p><small>Comparison of samples from 4-bit per-channel weight and per-token activation quantized CogVideoX-2B (upper) and Wan 14B (lower), across different methods.</small></p>
 </div>
 
@@ -36,7 +107,7 @@ This is the official implementation of our paper [QVGen](https://arxiv.org/abs/2
 
 <div align="center" style="font-family: charter;">
 
-<img src=./assets/overview.png width="80%"/>
+<img src=./assets/overview.png width="85%"/>
 
 <h align="justify"><strong>Overview pipeline of the proposed QVGen.</strong> (a) This framework integrates auxiliary modules $\Phi$ to improve training convergence. (b) To maintain performance while eliminating inference overhead induced by $\Phi$, we design a <i>rank-decay</i> schedule that progressively shrinks the entire $\Phi$ to $\varnothing$ through <i>iteratively applying</i> the following two strategies: (<i>i</i>) SVD to identify the low-impact components in $\Phi$; (<i>ii</i>) A rank-based regularization $\mathbf{\gamma}$ to decay the identified components to $\varnothing$.
 </h>
