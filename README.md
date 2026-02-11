@@ -73,31 +73,33 @@ This is the official implementation of our paper [QVGen](https://arxiv.org/abs/2
 
   <table>
     <tr>
-      <td align="center" width="25%">
+      <td align="center" width="40%">
         <video src="https://github.com/user-attachments/assets/e8536dfb-ad92-4921-827b-a9b39d7c6985" controls loop autoplay muted style="max-width: 100%; height: auto;">
             Your browser does not support the video tag.
         </video>
         <strong>BF16</strong>
       </td>
-      <td align="center" width="25%">
+      <td align="center" width="40%">
         <video src="https://github.com/user-attachments/assets/0f128045-6cc4-4c1a-b153-f0a48e85f15a" controls loop autoplay muted style="max-width: 100%; height: auto;">
           Your browser does not support the video tag.
         </video>
         <strong>W4A4 QVGen (Ours)</strong>
       </td>
-      <td align="center" width="25%">
+    </tr>
+      <tr>
+        <td align="center" width="40%">
         <video src="https://github.com/user-attachments/assets/03abc96c-35d0-4855-835a-2c266c87ee47" controls loop autoplay muted style="max-width: 100%; height: auto;">
             Your browser does not support the video tag.
         </video>
         <strong>BF16</strong>
       </td>
-      <td align="center" width="25%">
+      <td align="center" width="40%">
         <video src="https://github.com/user-attachments/assets/a352ec84-407c-433e-b41e-cbdc0417ffff" controls loop autoplay muted style="max-width: 100%; height: auto;">
           Your browser does not support the video tag.
         </video>
         <strong>W4A4 QVGen (Ours)</strong>
       </td>
-    </tr>
+      </tr>
   </table>
 
   <p><small>Comparison of samples from 4-bit per-channel weight and per-token activation quantized CogVideoX-2B (upper) and Wan 14B (lower), across different methods.</small></p>
